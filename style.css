@@ -106,14 +106,18 @@ a, ul, li{
 }
 .button .pry-button a{
     color: #ffff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     
 }
 .banner-img{
     width: 80%;
-    border-radius: 15px;
+    border-radius: 25px;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 30px;
+}
+.banner-img img{
+    border-radius: 20px;
 }
 /* Header section Mobile Responsive */
 @media screen and (max-width: 576px){
