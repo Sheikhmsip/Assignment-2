@@ -18,11 +18,14 @@ a, ul, li{
 .pry-color{
     background-color: #FF900E;
 }
+
 /* Header Styles */
 
 .header{
    background-color: #ff900e1a;
    width: 100%;
+   padding: 20px 0px;
+
    
 }
 .nav-bar{
@@ -31,7 +34,6 @@ a, ul, li{
     justify-content:space-between ;
     align-items: center;
     margin: 0 auto;
-    padding-top: 20px;
     border: 1px solid lightcoral;
 }
 .logo{
@@ -41,36 +43,15 @@ a, ul, li{
     font-family: 'Work Sans';
 }
 .header .nav-bar .nav-item{
-    display: flex;
-    gap: 50px;
-    border: 1px solid turquoise;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
     font-size: 1.3rem;
 }
 .nav-item li{
     color: #1E1E1E;
 }
-/* @media screen and (max-width: 576px){
-    .header{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .nav-bar{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        flex-direction: column;
-    }
-    .nav-item{
-        margin-top: 10px;
-        padding: 0px;
-        margin: 0px;
-    }
-    .header-description{
-        width: 100%;
-        padding: 0px;
-    }
-} */
+
 .header-description{
     display: flex;
     justify-content: center;
@@ -99,12 +80,13 @@ a, ul, li{
     
 }
 .pry-button{
-    padding: 20px;
+    padding: 15px 20px;
     color: #ffff;
     border-radius: 10px;
     border-style: none;
+    
 }
-.button .pry-button a{
+.pry-button a{
     color: #ffff;
     font-size: 1.5rem;
     font-weight: 500;
@@ -119,7 +101,8 @@ a, ul, li{
 .banner-img img{
     border-radius: 20px;
 }
-/* Header section Mobile Responsive */
+/* Header section Mobile Responsive Styles */
+
 @media screen and (max-width: 576px){
     .header{
         width: 100%;
@@ -132,10 +115,12 @@ a, ul, li{
         padding: 0px;
         flex-direction: column;
     }
-    .nav-item{
-        margin: 0px;
+    .header .nav-bar .nav-item{
+        grid-template-columns: repeat(1, 1fr);
         margin-top: 20px;
-        padding: 0px;
+        gap: 10px;
+        font-weight: 600;
+        
         
     }
     .header-description{
@@ -145,4 +130,53 @@ a, ul, li{
     }
 }
 
+/* future box1 styles */
+.future-box1{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+   
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.team-img img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+.future-box-description h2{
+    color: #131313;
+    font-size: 2rem;
+}
+.future-box-description h2 span{
+    color: #727272;
+}
+.future-box-description h2 .pry-text{
+    color: #FF900E;
+    
+}
+.future-box-description p{
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+.future-box-description .pry-button{
+    margin-top: 20px;
+}
+/* future box1 mobile responsive styles */
 
+@media screen and (max-width: 576px){
+    .future-box1{
+        flex-direction: column;
+    }
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
