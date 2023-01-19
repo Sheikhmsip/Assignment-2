@@ -175,8 +175,84 @@ a, ul, li{
 @media screen and (max-width: 576px){
     .future-box1{
         flex-direction: column;
+      
     }
     .team-img{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+/* Main container styles */
+
+.main-container{
+    width: 100%;
+    position: relative;
+    padding: 70px 0px;
+}
+.main-container .container{
+    width: 80%;
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    
+}
+.main-container .contant{
+    padding-top: 30px;
+}
+.contant .contant-headding{
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    gap: 20px;
+}
+.contant .contant-headding .stick{
+    width: 3px;
+    height: 50px;
+    padding: 1px;
+}
+.main-container .container .contant .contant-description{
+    font-size: 12px;
+    padding: 15px 0px;
+}
+.main-container .container .contant .sub-contant{
+    width: 550px;
+    padding: 25px 0px 0px 50px;
+    margin-top: 5px;
+    box-shadow: 3px -7px 13px 1px rgba(230,211,211,0.49);
+}
+.main-container .container .contant .sub-contant p{
+    padding: 12px 0px;
+    font-size: 12px;
+}
+.container-img img{
+    width: 100%;
+}
+.experience{
+    padding: 50px 40px;
+    position: absolute;
+    right: 30%;
+    bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #ffff;
+}
+/* Main contant mobile responsive */
+
+@media screen and (max-width: 576px){
+    .main-container{
+        width: 100%;
+    }
+    .main-container .container{
+        max-width: 80%;
+        flex-direction: column;  
+    }
+    .main-container .container .contant .sub-contant{
+        padding: 0px;
+        margin: 0px;    
+    }
+    .container-img img{
+        width: 100%;
+    }
+    
 }
