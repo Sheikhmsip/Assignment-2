@@ -34,7 +34,6 @@ a, ul, li{
     justify-content:space-between ;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid lightcoral;
 }
 .logo{
     font-size: 1.8rem;
