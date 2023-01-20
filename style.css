@@ -192,11 +192,12 @@ a, ul, li{
 .main-container .container{
     width: 80%;
     display: flex;
-    gap: 50px;
+    gap: 60px;
     margin: 0 auto;
     
 }
 .main-container .contant{
+    width: 60%;
     padding-top: 30px;
 }
 .contant .contant-headding{
@@ -215,8 +216,8 @@ a, ul, li{
     padding: 15px 0px;
 }
 .main-container .container .contant .sub-contant{
-    width: 550px;
-    padding: 25px 0px 0px 50px;
+    width: 100%;
+    padding: 20px 0px 0px 50px;
     margin-top: 5px;
     box-shadow: 3px -7px 13px 1px rgba(230,211,211,0.49);
 }
@@ -224,13 +225,16 @@ a, ul, li{
     padding: 12px 0px;
     font-size: 12px;
 }
+.container-img{
+    width: 40%;
+}
 .container-img img{
     width: 100%;
 }
 .experience{
     padding: 50px 40px;
     position: absolute;
-    right: 30%;
+    right: 27%;
     bottom: 10px;
     text-align: center;
     border-radius: 10px;
@@ -242,17 +246,199 @@ a, ul, li{
 @media screen and (max-width: 576px){
     .main-container{
         width: 100%;
+        margin: 0 auto;
     }
     .main-container .container{
-        max-width: 80%;
+        max-width: 100%;
         flex-direction: column;  
     }
+    .main-container .container .contant{
+        width: 100%;
+    }
     .main-container .container .contant .sub-contant{
+        width: 100%;
         padding: 0px;
         margin: 0px;    
+    }
+    .container-img{
+        width: 100%;
     }
     .container-img img{
         width: 100%;
     }
     
 }
+/* activities section styles  */
+.activities-section{
+    width: 80%;
+    margin: 0 auto;
+    padding-block: 30px;
+}
+
+.activities-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.activities-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.activities-photos{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 50px;
+    margin: 0 auto;
+    
+}
+.activities-block{
+    border:1px solid #FF900E;
+    width: 150px;
+    height: 130px;
+    text-align: center;
+    padding-block: 20px;
+    transition: all 2s ease-in-out ;
+}
+.activities-section .activities-photos .activities-block img{
+    width: 30%;
+    height: 35%;
+    
+}
+.activities-section .activities-photos .activities-block h1{
+    padding-block: 5px;
+}
+.activities-block:hover{
+    background-color:#FF900E;
+    color:white;
+    scale: 0.8;
+    rotate: 360deg;
+}
+/* Activities section mobile Responsive Styles */
+
+@media screen and (max-width: 576px){
+    .activities-photos{
+        flex-direction: column;
+        gap: 20px;
+      
+    }
+}
+
+/* Sponsor Section Styles */
+
+.sponsor-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-block: 20px;
+}
+
+.sponsor-container{
+    
+    margin:0 auto;
+    text-align: center;
+    
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+   
+}
+.sponsor-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-block: 30px;
+}
+.sponsor-sticker{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block: 20px;
+}
+.sponsor-sticker .sticker img{
+    filter: grayscale(10);
+}
+
+/* Sponsor Section Mobile Responsive Styles */
+
+@media screen and (max-width: 576px){
+    .sponsor-sticker{
+        flex-direction: column;
+        gap: 50px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    .sponsor-sticker .sticker img{
+        width: 50%;
+    }
+    
+}
+    /* Footer Section Styles  */
+
+    .footer{
+        width: 80%;
+        margin: 0 auto;
+        margin-block: 50px;
+        
+    }
+    .main-title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: #db8360 solid 1px;
+        padding-bottom: 25px;
+        line-height: 6mm;
+        gap: 10px;
+    }
+    .footer-title{
+        font-size: 0.9rem;
+    }
+    .title{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-block:  10px;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .title-1{
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+    .mini-title{
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    .mini-title-1{
+        width: 45%;
+    }
+    .footer-description{
+        width: 80%;
+        background-color: #FFF4E7;
+        color: #424242;
+        margin: 0 auto;
+        padding-block: 30px;
+        text-align: center;
+        margin-block: 30px;
+        border-radius: 10px;
+    }
+
+    /* Footer Responsive Styles */
+
+    @media screen and (max-width: 576px){
+        .main-title{
+            flex-direction: column;
+        }
+    }
+
+
